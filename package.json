@@ -1,0 +1,23 @@
+{
+  "author": "Jake Luer <jake@alogicalparadox.com>",
+  "name": "chai-stats",
+  "description": "Statistical and additional numerical assertions for the Chai Assertion Library.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chaijs/chai-stats.git"
+  },
+  "main": "./index",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
