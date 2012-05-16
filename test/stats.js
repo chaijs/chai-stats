@@ -5,7 +5,8 @@ if (!chai) {
 }
 
 var should = chai.should()
-  , assert = chai.assert;
+  , assert = chai.assert
+  , expect = chai.expect;
 
 describe('Chai Stats', function () {
 
