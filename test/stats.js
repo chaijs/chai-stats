@@ -5,7 +5,8 @@ if (!chai) {
 }
 
 var should = chai.should()
-  , assert = chai.assert;
+  , assert = chai.assert
+  , expect = chai.expect;
 
 describe('Chai Stats', function () {
 
@@ -53,6 +54,14 @@ describe('Chai Stats', function () {
         assert.deepAlmostEqual({pi: 3.1416}, {pi: 3.14159});
       }).should.throw(chai.AssertionError, "expected { pi: 3.1416 } to equal { pi: 3.14159 } up to 7 decimal places");
 
+    });
+    
+    it('should round to nearest number if explicitely given 0 precision', function() {
+      ({ pi: 3.1416 }).should.almost.eql({ pi: 3 }, 0);
+      assert.deepAlmostEqual({pi: 3.1416}, {pi: 3}, 0);
+      expect(3.1415).to.almost.equal(3, 0); // precision 0 => rounding
+      expect(3.1415).to.not.almost.equal(3); // precision undefined => 7 decimal places
+      expect(5.8).to.almost.equal(6, 0); // precision 0 => rounding
     });
   });
 });
