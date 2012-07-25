@@ -99,7 +99,13 @@ Node tests can be executed using `make test`. Browser tests can be seen by openi
 
 ## Contributors
 
-...
+     repo age : 3 months ago
+     commits  : 21
+     active   : 5 days
+     files    : 14
+     authors  :
+        17  Jake Luer               81.0%
+         4  josher19                19.0%
 
 ## License
 
