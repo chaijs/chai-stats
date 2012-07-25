@@ -23,6 +23,7 @@ describe('Chai Stats', function () {
     it('should be able to get the standard deviation', function () {
       nums.should.have.stdev.equal(3.1622776601683795);
       nums.should.have.deviation.equal(3.1622776601683795);
+      [ 1, 2, 3, 4 ].should.have.deviation.almost.equal(1.290, 2);
     });
   });
 
