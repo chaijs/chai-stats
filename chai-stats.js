@@ -177,8 +177,8 @@ module.exports = function (chai, _) {
   Assertion.overwriteMethod('eql', function (_super) {
     return function eql (exp, precision) {
       if (flag(this, 'almost')) {
-        var act = flag(this, 'object')
         if (null == precision) precision = 7;
+        var act = flag(this, 'object')
           , tol = 0.5 * Math.pow(10, -precision);
 
         function deepEql (act, exp) {
