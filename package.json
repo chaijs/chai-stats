@@ -20,6 +20,6 @@
   },
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">= 4"
   }
 }
